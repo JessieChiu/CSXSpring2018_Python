@@ -4,10 +4,10 @@
 + 課堂練習
   + 熟悉Jupyter Notebook - **week_1_first_meet.ipynb**
 + HW 1
-  + 認識91APP資料 - **week_1_EDA.ipynb**
+  + 認識資料：91APP - **week_1_EDA.ipynb**
 
 ## week_2
 + 課堂練習
-  + 自選網站網路爬蟲 - **week_2_youtube_crawler.ipynb**
+  + 爬蟲實戰：自選網站 - **week_2_youtube_crawler.ipynb**
 + HW 2
-  + 91APP網路爬蟲 - 
+  + 爬蟲實戰：91APP - 
