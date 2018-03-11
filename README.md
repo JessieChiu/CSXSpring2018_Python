@@ -8,6 +8,6 @@
 
 ## week_2
 + 課堂練習
-  + 91APP網路爬蟲 - pandas df：
+  + 自選網站網路爬蟲 - **week_2_youtube_crawler.ipynb**
 + HW 2
-  + 自選網站網路爬蟲 - pandas df：
+  + 91APP網路爬蟲 - 
