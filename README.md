@@ -8,6 +8,6 @@
 
 ## week_2
 + 課堂練習
-  + 爬蟲實戰：自選網站 - **week_2_youtube_crawler.ipynb**
+  + 爬蟲實戰：自選網站 - **week_2_youtube_crawler.ipynb**
 + HW 2
   + 爬蟲實戰：91APP - 
