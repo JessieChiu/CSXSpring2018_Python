@@ -16,6 +16,6 @@
 
 ## week_4
 + HW 4
-  + 爬蟲/文字雲：91APP - **week_4_91APP_wordcloud.ipynb**
-  + 爬蟲/文字雲：兩黨 - **week_4_Parties_wordcloud.ipynb**
+  + 爬蟲/文字雲：91APP - **week_4_91APP_wordcloud.ipynb**
+  + 爬蟲/文字雲：兩黨 - **week_4_Parties_wordcloud.ipynb**
   + 文字雲：管中閔 - **week_4_CMKuan_wordcloud.ipynb**
