@@ -1,0 +1,525 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 10500.18.0305.1200                               -->
+<workbook source-build='10.5.2 (10500.18.0305.1200)' source-platform='win' version='10.5' xml:base='https://us-west-2b.online.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <repository-location id='CMKuanWordcloud_2' path='/t/jessiecreates/workbooks' revision='1.0' site='jessiecreates' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='Doc1_wordcloud.csv+ (Multiple Connections)' inline='true' name='federated.08ba5gr17jglcy1a5gwcz1ozjxv8' version='10.5'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Doc1_wordcloud' name='textscan.0yb4xhu1ufhm1g15i23tc1p7xfzd'>
+            <connection class='textscan' directory='C:/Users/jestw/Desktop/CSXSpring2018_Python/week_5' filename='Doc1_wordcloud.csv' password='' server='' workgroup-auth-mode='as-is' />
+          </named-connection>
+          <named-connection caption='Doc4_wordcloud' name='textscan.1o5gxcj0ry98wu1356phz1xse3an'>
+            <connection class='textscan' directory='C:/Users/jestw/Desktop/CSXSpring2018_Python/week_5' filename='Doc4_wordcloud.csv' password='' server='' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <relation join='full' type='join'>
+          <clause type='join'>
+            <expression op='='>
+              <expression op='[Doc1_wordcloud.csv].[F1]' />
+              <expression op='[Doc4_wordcloud.csv].[F1]' />
+            </expression>
+          </clause>
+          <relation connection='textscan.0yb4xhu1ufhm1g15i23tc1p7xfzd' name='Doc1_wordcloud.csv' table='[Doc1_wordcloud#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='zh_TW' separator=','>
+              <column datatype='integer' name='F1' ordinal='0' />
+              <column datatype='string' name='key' ordinal='1' />
+              <column datatype='integer' name='value' ordinal='2' />
+            </columns>
+          </relation>
+          <relation connection='textscan.1o5gxcj0ry98wu1356phz1xse3an' name='Doc4_wordcloud.csv' table='[Doc4_wordcloud#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='zh_TW' separator=','>
+              <column datatype='integer' name='F1' ordinal='0' />
+              <column datatype='string' name='key' ordinal='1' />
+              <column datatype='integer' name='value' ordinal='2' />
+            </columns>
+          </relation>
+        </relation>
+        <cols>
+          <map key='[F1 (Doc4_wordcloud.csv)]' value='[Doc4_wordcloud.csv].[F1]' />
+          <map key='[F1]' value='[Doc1_wordcloud.csv].[F1]' />
+          <map key='[key (Doc4_wordcloud.csv)]' value='[Doc4_wordcloud.csv].[key]' />
+          <map key='[key]' value='[Doc1_wordcloud.csv].[key]' />
+          <map key='[value (Doc4_wordcloud.csv)]' value='[Doc4_wordcloud.csv].[value]' />
+          <map key='[value]' value='[Doc1_wordcloud.csv].[value]' />
+        </cols>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Doc1_wordcloud.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;zh_Hans_CN&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;NT$&quot;</attribute>
+              <attribute datatype='string' name='debit-close-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='debit-open-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;zh_TW&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[Doc1_wordcloud.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>key</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[key]</local-name>
+            <parent-name>[Doc1_wordcloud.csv]</parent-name>
+            <remote-alias>key</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LZH_RCN' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>value</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[value]</local-name>
+            <parent-name>[Doc1_wordcloud.csv]</parent-name>
+            <remote-alias>value</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Doc4_wordcloud.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;zh_Hans_CN&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;NT$&quot;</attribute>
+              <attribute datatype='string' name='debit-close-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='debit-open-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;zh_TW&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1 (Doc4_wordcloud.csv)]</local-name>
+            <parent-name>[Doc4_wordcloud.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>key</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[key (Doc4_wordcloud.csv)]</local-name>
+            <parent-name>[Doc4_wordcloud.csv]</parent-name>
+            <remote-alias>key</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LZH_RCN' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>value</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[value (Doc4_wordcloud.csv)]</local-name>
+            <parent-name>[Doc4_wordcloud.csv]</parent-name>
+            <remote-alias>value</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <extract count='20' enabled='true' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='en_US' class='hyper' dbname='C:/Users/jestw/Desktop/CSXSpring2018_Python/week_5/CMKuan_wordcloud_2.hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <cols>
+            <map key='[F1 (Doc4_wordcloud.csv)]' value='[Extract].[F1]' />
+            <map key='[F1]' value='[Extract].[F11]' />
+            <map key='[key (Doc4_wordcloud.csv)]' value='[Extract].[key]' />
+            <map key='[key]' value='[Extract].[key1]' />
+            <map key='[value (Doc4_wordcloud.csv)]' value='[Extract].[value]' />
+            <map key='[value]' value='[Extract].[value1]' />
+          </cols>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>F11</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[F1]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>F11</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Doc1_wordcloud.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>20</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>key1</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[key]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>key1</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Doc1_wordcloud.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>20</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LZH_RCN' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>value1</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[value]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>value1</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Doc1_wordcloud.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>F1</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[F1 (Doc4_wordcloud.csv)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>F1</remote-alias>
+              <ordinal>3</ordinal>
+              <family>Doc4_wordcloud.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>20</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>key</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[key (Doc4_wordcloud.csv)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>key</remote-alias>
+              <ordinal>4</ordinal>
+              <family>Doc4_wordcloud.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>20</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LZH_RCN' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>value</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[value (Doc4_wordcloud.csv)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>value</remote-alias>
+              <ordinal>5</ordinal>
+              <family>Doc4_wordcloud.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' dim-percentage='0.454277' measure-ordering='alphabetic' measure-percentage='0.545723' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Canada&quot;' />
+      </semantic-values>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Wordcloud_1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontname='Noto Sans CJK TC Medium'>管中閔臉書聲明</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Doc1_wordcloud.csv+ (Multiple Connections)' name='federated.08ba5gr17jglcy1a5gwcz1ozjxv8' />
+          </datasources>
+          <datasource-dependencies datasource='federated.08ba5gr17jglcy1a5gwcz1ozjxv8'>
+            <column datatype='string' name='[key]' role='dimension' type='nominal' />
+            <column-instance column='[key]' derivation='None' name='[none:key:nk]' pivot='key' type='nominal' />
+            <column-instance column='[value]' derivation='Sum' name='[sum:value:qk]' pivot='key' type='quantitative' />
+            <column datatype='integer' name='[value]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.08ba5gr17jglcy1a5gwcz1ozjxv8].[none:key:nk]'>
+            <groupfilter count='20' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='SUM([value])' function='order' user:ui-marker='order'>
+                <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+                  <groupfilter from='&quot;案&quot;' function='range' level='[none:key:nk]' to='&quot;懈怠&quot;' />
+                  <groupfilter from='&quot;已使&quot;' function='range' level='[none:key:nk]' to='&quot;作出&quot;' />
+                </groupfilter>
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.08ba5gr17jglcy1a5gwcz1ozjxv8].[none:key:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='on' />
+            </view>
+            <mark class='Text' />
+            <encodings>
+              <size column='[federated.08ba5gr17jglcy1a5gwcz1ozjxv8].[sum:value:qk]' />
+              <color column='[federated.08ba5gr17jglcy1a5gwcz1ozjxv8].[sum:value:qk]' />
+              <text column='[federated.08ba5gr17jglcy1a5gwcz1ozjxv8].[none:key:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+    </worksheet>
+    <worksheet name='Wordcloud_2'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontname='Noto Sans CJK TC Medium'>廖元豪觀點</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Doc1_wordcloud.csv+ (Multiple Connections)' name='federated.08ba5gr17jglcy1a5gwcz1ozjxv8' />
+          </datasources>
+          <datasource-dependencies datasource='federated.08ba5gr17jglcy1a5gwcz1ozjxv8'>
+            <column datatype='string' name='[key (Doc4_wordcloud.csv)]' role='dimension' type='nominal' />
+            <column-instance column='[key (Doc4_wordcloud.csv)]' derivation='None' name='[none:key (Doc4_wordcloud.csv):nk]' pivot='key' type='nominal' />
+            <column-instance column='[value (Doc4_wordcloud.csv)]' derivation='Sum' name='[sum:value (Doc4_wordcloud.csv):qk]' pivot='key' type='quantitative' />
+            <column datatype='integer' name='[value (Doc4_wordcloud.csv)]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.08ba5gr17jglcy1a5gwcz1ozjxv8].[none:key (Doc4_wordcloud.csv):nk]'>
+            <groupfilter count='20' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='SUM([value (Doc4_wordcloud.csv)])' function='order' user:ui-marker='order'>
+                <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+                  <groupfilter from='&quot;吧&quot;' function='range' level='[none:key (Doc4_wordcloud.csv):nk]' to='&quot;活動&quot;' />
+                  <groupfilter from='&quot;機關&quot;' function='range' level='[none:key (Doc4_wordcloud.csv):nk]' to='&quot;騷擾&quot;' />
+                  <groupfilter from='&quot;上午&quot;' function='range' level='[none:key (Doc4_wordcloud.csv):nk]' to='&quot;有種&quot;' />
+                  <groupfilter from='&quot;逾越&quot;' function='range' level='[none:key (Doc4_wordcloud.csv):nk]' to='&quot;最近&quot;' />
+                </groupfilter>
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.08ba5gr17jglcy1a5gwcz1ozjxv8].[none:key (Doc4_wordcloud.csv):nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='on' />
+            </view>
+            <mark class='Text' />
+            <encodings>
+              <size column='[federated.08ba5gr17jglcy1a5gwcz1ozjxv8].[sum:value (Doc4_wordcloud.csv):qk]' />
+              <color column='[federated.08ba5gr17jglcy1a5gwcz1ozjxv8].[sum:value (Doc4_wordcloud.csv):qk]' />
+              <text column='[federated.08ba5gr17jglcy1a5gwcz1ozjxv8].[none:key (Doc4_wordcloud.csv):nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard name='Dashboard 1'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones use-insets='false'>
+        <zone h='100000' id='2' type='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98000' id='12' param='horz' type='layout-flow' w='98400' x='800' y='1000'>
+            <zone h='98000' id='5' param='horz' type='layout-flow' w='82400' x='800' y='1000'>
+              <zone h='98000' id='3' type='layout-basic' w='82400' x='800' y='1000'>
+                <zone h='49000' id='7' name='Wordcloud_1' w='82400' x='800' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='49000' id='9' name='Wordcloud_2' w='82400' x='800' y='50000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+              </zone>
+            </zone>
+            <zone fixed-size='160' h='98000' id='11' is-fixed='true' param='vert' type='layout-flow' w='16000' x='83200' y='1000'>
+              <zone h='10125' id='13' name='Wordcloud_1' pane-specification-id='0' param='[federated.08ba5gr17jglcy1a5gwcz1ozjxv8].[sum:value:qk]' type='color' w='16000' x='83200' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone h='12500' id='10' name='Wordcloud_2' pane-specification-id='0' param='[federated.08ba5gr17jglcy1a5gwcz1ozjxv8].[sum:value (Doc4_wordcloud.csv):qk]' type='color' w='16800' x='83500' y='49125'>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='4' />
+          </zone-style>
+        </zone>
+      </zones>
+    </dashboard>
+  </dashboards>
+  <windows saved-dpi-scale-factor='1.5' source-height='44'>
+    <window class='worksheet' maximized='true' name='Wordcloud_1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.08ba5gr17jglcy1a5gwcz1ozjxv8].[sum:value:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+    </window>
+    <window class='worksheet' name='Wordcloud_2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.08ba5gr17jglcy1a5gwcz1ozjxv8].[sum:value (Doc4_wordcloud.csv):qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+    </window>
+    <window class='dashboard' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Wordcloud_1'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Wordcloud_2'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+    </window>
+  </windows>
+</workbook>
