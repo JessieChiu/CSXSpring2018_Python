@@ -17,3 +17,7 @@
 ## week_4
 + HW 4
   + 文字雲：管中閔 - **week_4_CMKuan_wordcloud.ipynb**
+
+## week_4
++ HW 5
+  + 文字雲：管中閔 - **week_5_CMKuan_tfidf.ipynb**
