@@ -18,6 +18,11 @@
 + HW 4
   + 文字雲：管中閔 - **week_4_CMKuan_wordcloud.ipynb** (以nbviewer完整檢視)
 
-## week_4
+## week_5
 + HW 5
   + 文字雲：管中閔 - **week_5_CMKuan_tfidf.ipynb** (以nbviewer完整檢視)
+
+## project_1
++ project_1
+  + TF-IDF + Visualization - **project_1.ipynb** (以nbviewer完整檢視)
+  
