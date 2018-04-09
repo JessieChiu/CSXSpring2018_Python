@@ -27,5 +27,6 @@
   + TF-IDF + Visualization - **project_1.ipynb** (以nbviewer完整檢視)
 
 ## Final Project
-+ Project Plan: 預測新顧客之購物行為，優化第一時間的行銷效益。詳見以下連結：
++ Project Plan: 
+  預測新顧客之購物行為，優化第一時間的行銷效益。詳見以下連結：
   https://docs.google.com/presentation/d/1JE6IMiRjYrbs5z4N38zpHTKTqVmazz3DJnBcOPgAveU/edit?usp=sharing
