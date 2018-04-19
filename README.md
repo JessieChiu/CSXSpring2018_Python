@@ -6,6 +6,8 @@
 + HW 1
   + 認識資料：91APP - **week_1_91APP_EDA.ipynb**
 
+[課堂練習] (https://github.com/JessieChiu/CSXSpring2018_Python/blob/master/week_1/week_1_first_meet.ipynb)
+
 ## week_2
 + HW 2
   + 爬蟲實戰：自選網站 - **week_2_youtube_crawler.ipynb**
