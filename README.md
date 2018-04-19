@@ -30,7 +30,7 @@
 
 ## week_5
 + HW 5
-  + 文字雲：管中閔 - **week_5_CMKuan_tfidf.ipynb** (以nbviewer完整檢視)
+  + TF-IDF：管中閔 - **week_5_CMKuan_tfidf.ipynb** (以nbviewer完整檢視)
   
 [HW 5](http://nbviewer.jupyter.org/github/JessieChiu/CSXSpring2018_Python/blob/520e44ecf2ae9736ad772dd4c1c856a321b5caeb/week_5/week_5_CMKuan_tfidf.ipynb)
 
