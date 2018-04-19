@@ -2,11 +2,9 @@
 
 ## week_1
 + 課堂練習
-  + 熟悉Jupyter Notebook - **week_1_first_meet.ipynb**
+  + 熟悉Jupyter Notebook
 + HW 1
-  + 認識資料：91APP - **week_1_91APP_EDA.ipynb**
-    
-    認識91APP資料集，依時間分群（日期、月份、星期幾、小時），觀察會員消費行為。
+  + 認識資料：91APP - 認識91APP資料集，依時間分群（日期、月份、星期幾、小時），觀察會員消費行為。
 
 [課堂練習 1](https://github.com/JessieChiu/CSXSpring2018_Python/blob/master/week_1/week_1_first_meet.ipynb)
 
