@@ -47,6 +47,7 @@
 [project_1](http://nbviewer.jupyter.org/github/JessieChiu/CSXSpring2018_Python/blob/520e44ecf2ae9736ad772dd4c1c856a321b5caeb/project_1/project_1.ipynb)
 
 ## Final Project
-+ Project Plan (ver 1) - 預測新顧客之購物行為，優化第一時間的行銷效益。
++ Project Plan (ver 1)
+  + 預測新顧客之購物行為，優化第一時間的行銷效益。
 
 [Project Plan (ver 1)](https://docs.google.com/presentation/d/1JE6IMiRjYrbs5z4N38zpHTKTqVmazz3DJnBcOPgAveU/edit?usp=sharing)
