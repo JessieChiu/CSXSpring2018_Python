@@ -6,7 +6,8 @@
 + HW 1
   + 認識資料：91APP - **week_1_91APP_EDA.ipynb**
 
-[課堂練習] (https://github.com/JessieChiu/CSXSpring2018_Python/blob/master/week_1/week_1_first_meet.ipynb)
+[課堂練習](https://github.com/JessieChiu/CSXSpring2018_Python/blob/master/week_1/week_1_first_meet.ipynb)
+[HW 1](https://github.com/JessieChiu/CSXSpring2018_Python/blob/master/week_1/week_1_91APP_EDA.ipynb)
 
 ## week_2
 + HW 2
