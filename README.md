@@ -26,22 +26,22 @@
 + HW 4
   + 文字雲：管中閔 - **week_4_CMKuan_wordcloud.ipynb** (以nbviewer完整檢視)
 
-[HW 4](https://github.com/JessieChiu/CSXSpring2018_Python/blob/master/week_4/week_4_CMKuan_wordcloud.ipynb)
+[HW 4](http://nbviewer.jupyter.org/github/JessieChiu/CSXSpring2018_Python/blob/520e44ecf2ae9736ad772dd4c1c856a321b5caeb/week_4/week_4_CMKuan_wordcloud.ipynb)
 
 ## week_5
 + HW 5
   + 文字雲：管中閔 - **week_5_CMKuan_tfidf.ipynb** (以nbviewer完整檢視)
   
-[HW 5](https://github.com/JessieChiu/CSXSpring2018_Python/blob/master/week_5/week_5_CMKuan_tfidf.ipynb)
+[HW 5](http://nbviewer.jupyter.org/github/JessieChiu/CSXSpring2018_Python/blob/520e44ecf2ae9736ad772dd4c1c856a321b5caeb/week_5/week_5_CMKuan_tfidf.ipynb)
 
 ## project_1
 + project_1
   + TF-IDF + Visualization - **project_1.ipynb** (以nbviewer完整檢視)
   
-[project_1](https://github.com/JessieChiu/CSXSpring2018_Python/blob/master/project_1/project_1.ipynb)
+[project_1](http://nbviewer.jupyter.org/github/JessieChiu/CSXSpring2018_Python/blob/520e44ecf2ae9736ad772dd4c1c856a321b5caeb/project_1/project_1.ipynb)
 
 ## Final Project
-+ Project Plan: 
++ Project Plan (ver 1): 
   預測新顧客之購物行為，優化第一時間的行銷效益。
 
-[Project Plan](https://docs.google.com/presentation/d/1JE6IMiRjYrbs5z4N38zpHTKTqVmazz3DJnBcOPgAveU/edit?usp=sharing)
+[Project Plan (ver 1)](https://docs.google.com/presentation/d/1JE6IMiRjYrbs5z4N38zpHTKTqVmazz3DJnBcOPgAveU/edit?usp=sharing)
