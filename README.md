@@ -46,6 +46,15 @@
   
 [project_1](http://nbviewer.jupyter.org/github/JessieChiu/CSXSpring2018_Python/blob/520e44ecf2ae9736ad772dd4c1c856a321b5caeb/project_1/project_1.ipynb)
 
+## project_2
++ project_2
+  + EDA/ Feature Engineering/ Machine Learning
+  + Predicting the survival of passengers from the Kaggle Titanic data.
+
+[project_2](https://github.com/JessieChiu/CSXSpring2018_Python/blob/master/project_2/project_2.ipynb)
+
+[project_2: prediction results](https://github.com/JessieChiu/CSXSpring2018_Python/blob/master/project_2/Titanic-submission.csv)
+
 ## Final Project
 + Project Plan (ver 1)
   + 預測新顧客之購物行為，優化第一時間的行銷效益。
