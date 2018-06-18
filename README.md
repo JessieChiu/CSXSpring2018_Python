@@ -55,6 +55,13 @@
 
 [project_2: prediction results](https://github.com/JessieChiu/CSXSpring2018_Python/blob/master/project_2/Titanic-submission.csv)
 
+## project_4
++ project_4
+  + Association Rules - apriori
+  + Applying apriori algorithm to the 91APP data for market basket analysis.
+
+[project_4](https://github.com/JessieChiu/CSXSpring2018_Python/blob/master/project_4/project_4.ipynb)
+
 ## Final Project
 + Project Plan (ver 1)
   + 預測新顧客之購物行為，優化第一時間的行銷效益。
