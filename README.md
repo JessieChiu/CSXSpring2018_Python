@@ -58,7 +58,7 @@
 ## project_3
 + project_3
   + Linear Regression/ ANOVA
-  + Applying LR & ANOVA to NTU Staff Titanic data.
+  + Applying LR & ANOVA to NTU Staff data.
 
 [project_3](https://github.com/janeru/b3801053csx/blob/master/project3/project3.ipynb)
 
