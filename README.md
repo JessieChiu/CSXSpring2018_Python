@@ -55,12 +55,26 @@
 
 [project_2: prediction results](https://github.com/JessieChiu/CSXSpring2018_Python/blob/master/project_2/Titanic-submission.csv)
 
+## project_3
++ project_3
+  + Linear Regression/ ANOVA
+  + Applying LR & ANOVA to NTU Staff Titanic data.
+
+[project_3](https://github.com/janeru/b3801053csx/blob/master/project3/project3.ipynb)
+
 ## project_4
 + project_4
   + Association Rules - apriori
   + Applying apriori algorithm to the 91APP data for market basket analysis.
 
 [project_4](https://github.com/JessieChiu/CSXSpring2018_Python/blob/master/project_4/project_4.ipynb)
+
+## project_5
++ project_5
+  + PyTorch - CNN
+  + Designing, training, and testing a neural net in PyTorch.
+
+[project_5](https://github.com/janeru/b3801053csx/blob/master/project5/project5.ipynb)
 
 ## Final Project
 + Project Plan (ver 1)
