@@ -82,4 +82,7 @@
 
 [Project Plan (ver 1)](https://docs.google.com/presentation/d/1JE6IMiRjYrbs5z4N38zpHTKTqVmazz3DJnBcOPgAveU/edit?usp=sharing)
 
-[Project Plan (ETP)](https://docs.google.com/presentation/d/1yM0BHpVoJW_gpauKf0o8C4OkYRC5TFk-rC7io2w5qYU/edit?usp=sharing)
++ Project Plan (final)
+[Project Plan (PPT)](https://docs.google.com/presentation/d/1yM0BHpVoJW_gpauKf0o8C4OkYRC5TFk-rC7io2w5qYU/edit?usp=sharing)
+[Project Plan (code)](https://github.com/JessieChiu/CSXSpring2018_Python/blob/master/final/final.ipynb)
+
