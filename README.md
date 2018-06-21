@@ -83,6 +83,9 @@
 [Project Plan (ver 1)](https://docs.google.com/presentation/d/1JE6IMiRjYrbs5z4N38zpHTKTqVmazz3DJnBcOPgAveU/edit?usp=sharing)
 
 + Project Plan (final)
+  + 目標：找出滿額促銷（折現/打折）的實質效益
+  + 成效：滿額促銷的額外獲利 VS 成本，以計算 ROI
+  
 [Project Plan (PPT)](https://docs.google.com/presentation/d/1yM0BHpVoJW_gpauKf0o8C4OkYRC5TFk-rC7io2w5qYU/edit?usp=sharing)
-[Project Plan (code)](https://github.com/JessieChiu/CSXSpring2018_Python/blob/master/final/final.ipynb)
 
+[Project Plan (code)](https://github.com/JessieChiu/CSXSpring2018_Python/blob/master/final/final.ipynb)
